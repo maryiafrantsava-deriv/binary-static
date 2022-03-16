@@ -33,7 +33,7 @@ const Elevio = (() => {
     const init = () => {
         if (isLoginPages()) return;
 
-        document.addEventListener('readystatechange', function() {
+        document.addEventListener('readystatechange', () => {
             if (document.readyState === 'complete') {
                 el_shell = document.getElementById(el_shell_id);
 
