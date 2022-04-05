@@ -133,14 +133,14 @@ const DigitDisplay = (() => {
     };
 
     const init = (id_render, proposal_open_contract) => {
-        initTable(id_render, calculateTableHeight(proposal_open_contract), proposal_open_contract);
-        DigitTicker.init(
-            'digit_ticker_container',
-            proposal_open_contract.contract_type,
-            proposal_open_contract.shortcode,
-            proposal_open_contract.tick_count,
-            proposal_open_contract.status
-        );
+        initTable(id_render, calculateTableHeight(proposal_open_contract), proposal_open_contract)
+            .DigitTicker.init(
+                'digit_ticker_container',
+                proposal_open_contract.contract_type,
+                proposal_open_contract.shortcode,
+                proposal_open_contract.tick_count,
+                proposal_open_contract.status
+            );
         renderTable(id_render, proposal_open_contract);
     };
 
