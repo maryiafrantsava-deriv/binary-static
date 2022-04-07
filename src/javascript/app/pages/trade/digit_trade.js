@@ -8,7 +8,7 @@ const localize             = require('../../../_common/localize').localize;
 const DigitDisplay = (() => {
     let $container;
 
-async function initTable(id_render, calculated_height, poc){
+const initTable = async (id_render, calculated_height, poc) => {
         $container = $(`#${id_render}`);
         $container
             .addClass('normal-font')
